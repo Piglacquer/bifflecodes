@@ -6,6 +6,5 @@ phases:
       - echo Nothing to do yet, bitch
   artifacts:
     files:
-      - index.html
-      - static/*
-      base-directory: dist
+      - dist/index.html
+      - dist/static/*
