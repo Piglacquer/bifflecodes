@@ -6,4 +6,4 @@ phases:
       - echo Nothing to do yet
 artifacts:
   files:
-    - dist/*
+    - ../../dist/*
