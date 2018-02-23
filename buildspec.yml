@@ -4,7 +4,8 @@ phases:
   build:
     commands:
       - echo Nothing to do yet
-artifacts:
-  files:
-    - dist/index.html
-    - dist/static/*
+  artifacts:
+    files:
+      - index.html
+      - static/*
+      base-directory: dist
