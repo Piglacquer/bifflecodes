@@ -1,9 +1,15 @@
 version: 0.1
 
 phases:
+  install:
+    commands:
+      - echo Shit on me
+  pre_build:
+    commands:
+      - echo OUCH
   build:
     commands:
       - echo Nothing to do yet
-  artifacts:
-    files:
-      - index.html
+artifacts:
+  files:
+    - index.html
