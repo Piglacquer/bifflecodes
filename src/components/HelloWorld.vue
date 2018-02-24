@@ -9,7 +9,7 @@
           target="_blank"
         >
           Core Docs
-          
+          Fuckkkkkk
         </a>
       </li>
       <li>
