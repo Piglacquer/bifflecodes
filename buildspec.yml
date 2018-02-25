@@ -3,7 +3,7 @@ version: 0.1
 phases:
   build:
     commands:
-      - echo Build started on `date`, man
+      - echo Build started on `date`
 artifacts:
   files:
     - dist/*
