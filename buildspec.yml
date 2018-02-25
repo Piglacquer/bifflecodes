@@ -12,5 +12,5 @@ phases:
       - echo Nothing to do yet
 artifacts:
   files:
-    - index.html
-    - static/*
+    - dist/index.html
+    - dist/static/*
