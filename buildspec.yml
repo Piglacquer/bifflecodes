@@ -3,14 +3,16 @@ version: 0.1
 phases:
   install:
     commands:
-      - echo Shit on me
+      - echo Nothing to do in the install phase...
   pre_build:
     commands:
-      - echo OUCH
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Nothing to do yet
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
   files:
-    - ./dist/index.html
-    - ./dist/static/*
+    - dist/*
