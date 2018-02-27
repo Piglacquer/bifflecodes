@@ -5,11 +5,5 @@ phases:
     commands:
       - echo Build started on `date`
 artifacts:
-  # files:
-  #   - dist/*
-  #   - buildspec.yml
-  addons:
-    artifacts:
-        s3_region: "us-west-2"
-        paths:
-          - $(git ls-files -o app/build/outputs | tr "\n" ":")
+  files:
+    - dist/*
