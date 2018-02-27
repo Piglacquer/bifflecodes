@@ -2,9 +2,7 @@
   <div class='menu-bar'>
     <lottie :options="defaultOptions" :height="100" :width="100" v-on:animCreated="handleAnimation"/>
     <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <router-link :to='About'>About</router-link>
     </ul>
   </div>
 </template>

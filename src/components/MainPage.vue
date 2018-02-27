@@ -3,10 +3,10 @@
     <mq-layout mq="mobile">
       <MobileMenuBar />
     </mq-layout>
-    <router-view></router-view>
-    <!-- <mq-layout mq="laptop+">
+    <mq-layout mq="laptop+">
       <DesktopMenuBar />
-    </mq-layout> -->
+    </mq-layout>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 <script>
