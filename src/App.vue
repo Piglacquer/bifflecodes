@@ -21,6 +21,8 @@ export default {
 <style>
 body{
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 .fade-enter-active, .fade-leave-active {
   transition-property: opacity;

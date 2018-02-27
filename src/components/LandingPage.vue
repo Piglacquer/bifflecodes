@@ -36,7 +36,6 @@ export default {
       stop: function () {
         this.anim.stop();
       },
-
       play: function () {
         this.anim.play();
       },
@@ -44,12 +43,10 @@ export default {
       pause: function () {
         this.anim.pause();
       },
-
       onSpeedChange: function () {
         this.anim.setSpeed(this.animationSpeed);
       }
     }
-
 }</script>
 <style scoped>
 @font-face {
