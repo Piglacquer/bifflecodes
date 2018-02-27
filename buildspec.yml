@@ -6,4 +6,5 @@ phases:
       - echo Build started on `date`
 artifacts:
   files:
-    - /client/dist/*
+    - dist/*
+    - buildspec.yml
