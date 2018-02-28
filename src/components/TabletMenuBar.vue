@@ -2,7 +2,7 @@
   <div class='menu-bar'>
     <router-link to='/main'>
       <div class="anim">
-        <lottie :options="defaultOptions" :height="100" :width="100" v-on:animCreated="handleAnimation"/>
+        <lottie :options="defaultOptions" :height="80" :width="80" v-on:animCreated="handleAnimation"/>
       </div>
     </router-link>
     <ul class='menu-links'>
@@ -18,7 +18,7 @@ import Lottie from '../lottie.vue'
 import * as animationData from '../../static/PB.json'
 
 export default {
-  name: "DesktopMenuBar",
+  name: "TabletMenuBar",
   data() {
     return {
       defaultOptions: {animationData: animationData},
@@ -76,7 +76,7 @@ ul{
   text-decoration: none;
   color: white;
   font-family: DejaVu;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px;
   border-radius: 10px;
 }

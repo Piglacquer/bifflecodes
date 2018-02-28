@@ -1,12 +1,19 @@
 <template>
   <div class='landing-anim'>
     <mq-layout mq="mobile">
-      <lottie :options="defaultOptions" :height="200" :width="200" v-on:animCreated="handleAnimation"/>
+      <router-link to='main'>
+        <div class="">
+          <lottie :options="defaultOptions" :height="200" :width="200" v-on:animCreated="handleAnimation"/>
+        </div>
+      </router-link>
     </mq-layout>
     <mq-layout mq="laptop+">
-      <lottie :options="defaultOptions" :height="600" :width="600" v-on:animCreated="handleAnimation"/>
+      <router-link to='main'>
+        <div class="">
+          <lottie :options="defaultOptions" :height="600" :width="600" v-on:animCreated="handleAnimation"/>
+        </div>
+      </router-link>
     </mq-layout>
-        <router-link to='main' class='button-affirmative'>Come on in!</router-link>
   </div>
 </template>
 <script>
@@ -57,9 +64,11 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: space-around;
+  height: 100vh;
 }
 
-.button-affirmative {
+/* .button-affirmative {
   background-color: rgb(19, 204, 183);
   border-radius: 15px;
   font-size: 2rem;
@@ -69,7 +78,7 @@ export default {
   padding: .5rem 1rem .5rem 1rem;
   opacity: 1;
   transition: 0.2s;
-}
+} */
 
-.button-affirmative:hover {opacity: 0.7}
+/* .button-affirmative:hover {opacity: 0.7} */
 </style>
