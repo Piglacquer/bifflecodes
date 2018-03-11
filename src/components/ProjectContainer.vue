@@ -14,4 +14,15 @@ export default {
   }
 }</script>
 <style scoped>
+.project-container{
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  width: 20vw;
+  height: 20vh;
+}
+
+h2 {
+  font-family: DejaVu;
+}
 </style>
