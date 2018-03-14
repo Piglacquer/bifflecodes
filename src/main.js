@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueMq from 'vue-mq'
+import VueParticles from 'vue-particles'
 
+Vue.use(VueParticles)
 Vue.use(VueMq, {
   breakpoints: {
     mobile: 450,

@@ -71,6 +71,7 @@ label {
   justify-content: space-around;
   color: white;
   width: 80vw;
+  background-color: black;
 }
 
 .mobile-form-contact input{
@@ -106,6 +107,8 @@ label {
   justify-content: space-around;
   color: white;
   font-size: 1rem;
+  background-color: black;
+  padding: 1rem;
 }
 
 input[type=text]{

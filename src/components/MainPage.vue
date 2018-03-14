@@ -6,6 +6,9 @@
     <mq-layout mq="laptop+">
       <DesktopMenuBar />
     </mq-layout>
+    <div class="particles">
+      <vue-particles color="#dedede"></vue-particles>
+    </div>
     <div class="router">
       <transition name='slide'>
         <router-view></router-view>
@@ -30,6 +33,19 @@ export default {
   }
 }</script>
 <style scoped>
+.particles {
+  z-index: -1;
+  position: absolute;
+  top: 90;
+  width: 100%;
+  height: 85%;
+}
+
+vue-particles {
+  width: 100%;
+  height: 100vh;
+}
+
 h1 {
   color: white;
 }
