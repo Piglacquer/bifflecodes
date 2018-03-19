@@ -2,60 +2,114 @@
   <div class='contact'>
     <mq-layout mq="mobile">
       <h1>IM CONTACT</h1>
-      <form class="mobile-form-contact" v-on:submit.prevent='logMe' method="post">
+      <form class="mobile-form-contact" v-on:submit.prevent='sendEmail(client)' method="post">
         <label for="name">NAME</label>
-        <input type="text" name="name" placeholder='Your Name'>
+        <input v-model='client.name' type="text" name="name" placeholder='Your Name'>
         <label for="email">E-MAIL</label>
-        <input type="text" name="" placeholder='Your E-mail'>
+        <input v-model='client.email' type="text" name="" placeholder='Your E-mail'>
         <label for="reason">WHAT CAN I HELP YOU WITH?</label>
-        <input  class='mobile-form-reason' type="text" name="reason" placeholder='I really need some help with these bees'>
-        <input class='mobile-form-submit' type="submit" name="submit" value="Submit">
+        <input  v-model='client.message' class='mobile-form-reason' type="text" name="reason" placeholder='I really need some help with these bees'>
+        <div class="">
+          <input class='mobile-form-submit' type="submit" name="submit" value="Submit">
+          <h3 v-if='responseShown' class='email-response'>{{response}}</h3>
+        </div>
       </form>
     </mq-layout>
     <mq-layout mq="laptop+">
       <h1>IM CONTACT</h1>
-      <form class="laptop-form-contact" v-on:submit.prevent='logMe' method="post">
+      <form class="laptop-form-contact" v-on:submit.prevent='sendEmail(client)' method="post">
         <label for="name">NAME</label>
         <input  v-model='client.name' type="text" name="name" placeholder='Your Name'>
         <label for="email">E-MAIL</label>
         <input  v-model='client.email' type="text" name="email" placeholder='Your E-mail'>
         <label for="reason">WHAT CAN I HELP YOU WITH?</label>
-        <input  v-model='client.reason' class='laptop-form-reason' type="text" name="reason" placeholder='I really need some help with these bees'>
-        <input class='laptop-form-submit' type="submit" name="submit" value="SUBMIT">
+        <input  v-model='client.message' class='laptop-form-reason' type="text" name="reason" placeholder='I really need some help with these bees'>
+        <div class="submit-response">
+          <input class='laptop-form-submit' type="submit" name="submit" value="SUBMIT">
+          <h3 v-if='responseShown' class='email-response'>{{response}}</h3>
+        </div>
       </form>
     </mq-layout>
   </div>
 </template>
 <script>
+
 export default {
   name: "Contact",
   data(){
     return{
       client: {
-        name: '',
         email: '',
-        reason: ''
-      }
+        name: '',
+        message: ''
+      },
+      response: '',
+      responseShown: false
     }
+  },
+  components: {
+
   },
   methods: {
     logMe(){
       console.log(this.client)
+    },
+    sendEmail(client){
+      return fetch('https://bifflecodes-server.herokuapp.com/send', {
+        method: 'POST',
+        body: JSON.stringify(client),
+        headers: {'content-type': 'application/json'}
+      })
+      .then(resp => resp.json())
+      .then(resp => {
+        this.response = resp.message
+      })
+      .then(() => this.wipeForm())
+    },
+    wipeForm(){
+      this.client.email = ''
+      this.client.name = ''
+      this.client.message = ''
+      this.responseShown = true
     }
   }
 }</script>
 <style scoped>
 
+h3{
+  margin: 0;
+}
+
+.email-response{
+  padding: 10px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #13CCB7;;
+  color: white;
+  font-size: 2rem;
+  font-family: DejaVu;
+}
+
+.submit-response{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
 .contact{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: white;
   font-family: DejaVu;
-  /* padding-left: 3px; */
   margin: 0;
   font-size: 3rem;
 }

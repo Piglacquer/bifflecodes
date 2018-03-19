@@ -1,6 +1,7 @@
 <template>
   <div id="projects">
       <h1>IM PROJECTS</h1>
+      <h2>WEB</h2>
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
@@ -15,34 +16,6 @@
               </a>
               <a target="_blank" href='https://terra-former.firebaseapp.com/#/'>
                 <img src='static/sign-out-option.png'>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class='project-pic'>
-          </div>
-          <div class='project-info-slider'>
-            <div class='project-info'>
-              <a href=''>
-                <img src='static/github-logo.png'>
-              </a>
-              <a href=''>
-                <img src='static/sign-out-option.png'>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class='project-pic'>
-            <img class='project-pic' src="static/CultSundays.png" alt="CultSundays">
-          </div>
-          <div class='project-info-slider'>
-            <h2>FILM</h2>
-            <h3>CULT SUNDAYS</h3>
-            <div class='project-info'>
-              <a target="_blank" href='https://vimeo.com/search?q=kadencedist+cult+sundays'>
-                <img src='static/vimeo.png'>
               </a>
             </div>
           </div>
@@ -66,20 +39,6 @@
         </div>
         <div class="project">
           <div class='project-pic'>
-            <img class='project-pic' src="static/Homecoming.png" alt="homecoming">
-          </div>
-          <div class='project-info-slider'>
-            <h2>FILM</h2>
-            <h3>HOMECOMING</h3>
-            <div class='project-info'>
-              <a target="_blank" href='https://www.youtube.com/watch?v=5SKg8R6Wo4Q'>
-                <img src='static/youtube.png'>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class='project-pic'>
             <img class='project-pic' src="static/oysterWithCaviar.png" alt="oysterWithCaviar">
           </div>
           <div class='project-info-slider'>
@@ -91,6 +50,51 @@
               </a>
               <a target='_blank' href='https://caviar-dreams-8c551.firebaseapp.com/#/'>
                 <img src='static/sign-out-option.png'>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class='project-pic'>
+          </div>
+          <div class='project-info-slider'>
+            <div class='project-info'>
+              <a href=''>
+                <img src='static/github-logo.png'>
+              </a>
+              <a href=''>
+                <img src='static/sign-out-option.png'>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>FILM</h2>
+      <div class="projects-container">
+        <div class="project">
+          <div class='project-pic'>
+            <img class='project-pic' src="static/CultSundays.png" alt="CultSundays">
+          </div>
+          <div class='project-info-slider'>
+            <h2>FILM</h2>
+            <h3>CULT SUNDAYS</h3>
+            <div class='project-info'>
+              <a target="_blank" href='https://vimeo.com/search?q=kadencedist+cult+sundays'>
+                <img src='static/vimeo.png'>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class='project-pic'>
+            <img class='project-pic' src="static/Homecoming.png" alt="homecoming">
+          </div>
+          <div class='project-info-slider'>
+            <h2>FILM</h2>
+            <h3>HOMECOMING</h3>
+            <div class='project-info'>
+              <a target="_blank" href='https://www.youtube.com/watch?v=5SKg8R6Wo4Q'>
+                <img src='static/youtube.png'>
               </a>
             </div>
           </div>
@@ -124,6 +128,24 @@
           </div>
         </div>
       </div>
+      <h2>MOTION</h2>
+      <div class="projects-container">
+        <div class="project">
+          <div class='project-pic'>
+        </div>
+        <div class='project-info-slider'>
+          <div class='project-info'>
+            <a href=''>
+              <img src='static/github-logo.png'>
+            </a>
+            <a href=''>
+              <img src='static/sign-out-option.png'>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>

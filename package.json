@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "emailjs-com": "^2.1.0",
     "particles.js": "^2.0.0",
     "vue": "^2.5.2",
     "vue-lottie": "^0.1.2",

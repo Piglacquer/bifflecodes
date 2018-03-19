@@ -52,13 +52,20 @@ h1 {
 
 .slide-enter-active, .slide-leave-active {
   transition: opacity 1s, transform 1s;
+  /* transition-delay: 1s; */
 }
-.slide-enter, .slide-leave-to {
+.slide-enter {
   opacity: 0;
   transform: translateX(-30%);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(50%);
 }
 
 .slide-enter-active {
   transition-delay: 1s;
 }
+
 </style>

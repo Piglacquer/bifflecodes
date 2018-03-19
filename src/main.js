@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueMq from 'vue-mq'
 import VueParticles from 'vue-particles'
+import EmailJS from 'emailjs-com'
 
 Vue.use(VueParticles)
 Vue.use(VueMq, {
