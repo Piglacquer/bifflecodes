@@ -7,3 +7,4 @@ phases:
 artifacts:
   files:
     - dist/*
+    - dist/static/*
