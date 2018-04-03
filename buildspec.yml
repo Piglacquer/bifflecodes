@@ -8,3 +8,7 @@ artifacts:
   files:
     - dist/*
     - dist/static/*
+    - dist/static/js/*
+    - dist/static/img/*
+    - dist/static/fonts/*
+    - dist/static/css/*
