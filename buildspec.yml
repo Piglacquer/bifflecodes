@@ -6,9 +6,6 @@ phases:
       - echo Build started on `date`
 artifacts:
   files:
-    - dist/*
-    - dist/static/*
-    - dist/static/js/*
-    - dist/static/img/*
-    - dist/static/fonts/*
-    - dist/static/css/*
+    - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes
