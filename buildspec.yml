@@ -7,5 +7,6 @@ phases:
 artifacts:
   files:
     - '**/*'
+    - 'static/**/*'
   base-directory: 'dist*'
   discard-paths: yes
