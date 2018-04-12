@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
-      <h1>IM PROJECTS</h1>
-      <h2>WEB</h2>
+    <h1>PROJECTS</h1>
+    <h2>WEB</h2>
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
@@ -132,17 +132,51 @@
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
-        </div>
+            <img class='project-pic' src="../../static/UNSG-intro_2.png" alt="unsg">
+          </div>
         <div class='project-info-slider'>
           <div class='project-info'>
-            <a href=''>
-              <img src='static/github-logo.png'>
-            </a>
-            <a href=''>
-              <img src='static/sign-out-option.png'>
+            <a href='https://vimeo.com/263949983'>
+              <img src='static/vimeo.png'>
             </a>
           </div>
         </div>
+        </div>
+      <div class="project">
+        <div class='project-pic'>
+          <img class='project-pic' src="/static/Cult-Sundays-Motion.png" alt="unsg">
+        </div>
+      <div class='project-info-slider'>
+        <div class='project-info'>
+          <a href='https://vimeo.com/263949470'>
+            <img src='static/vimeo.png'>
+          </a>
+        </div>
+      </div>
+        </div>
+      <div class="project">
+        <div class='project-pic'>
+          <img class='project-pic' src="/static/Johannes_Bayer-Intro.png" alt="Johannes">
+        </div>
+      <div class='project-info-slider'>
+        <div class='project-info'>
+          <a href='https://vimeo.com/263951661'>
+            <img src='static/vimeo.png'>
+          </a>
+        </div>
+      </div>
+        </div>
+      <div class="project">
+        <div class='project-pic'>
+          <img class='project-pic' src="/static/UNSG-intro.png" alt="UNSG">
+        </div>
+      <div class='project-info-slider'>
+        <div class='project-info'>
+          <a href='https://vimeo.com/263950081'>
+            <img src='static/vimeo.png'>
+          </a>
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -151,12 +185,18 @@
 <script>
 export default {
   name: "Projects",
-  data(){
-    return {}
+  data() {
+    return {};
   }
-}</script>
+};
+</script>
 <style scoped>
-
+#projects {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
 h1 {
   color: white;
   font-family: DejaVu;
@@ -190,7 +230,7 @@ h1 {
   width: 300px;
 }
 
-.project-info-slider{
+.project-info-slider {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -199,13 +239,13 @@ h1 {
   opacity: 0.96;
   height: 300px;
   width: 0px;
-  -webkit-transition: width .5s; /* Safari */
-  transition: width .5s;
-  background-color: #13CCB7;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
+  background-color: #13ccb7;
   overflow: hidden;
 }
 
-.project:hover .project-info-slider{
+.project:hover .project-info-slider {
   width: 300px;
 }
 
@@ -221,10 +261,11 @@ img {
   height: 50px;
 }
 
-h2, h3{
+h2,
+h3 {
   white-space: nowrap;
   color: white;
   font-family: DejaVu;
+  padding-top: 5rem;
 }
-
 </style>
