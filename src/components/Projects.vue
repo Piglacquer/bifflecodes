@@ -266,6 +266,5 @@ h3 {
   white-space: nowrap;
   color: white;
   font-family: DejaVu;
-  padding-top: 5rem;
 }
 </style>

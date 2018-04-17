@@ -8,5 +8,5 @@ artifacts:
   files:
     - '*'
     - 'static/**/*'
-  base-directory: 'dist*'
+  base-directory: 'dist'
   discard-paths: no
