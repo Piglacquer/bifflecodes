@@ -56,13 +56,16 @@
         </div>
         <div class="project">
           <div class='project-pic'>
+            <img class='project-pic' src="static/stockmoji.png" alt="stockmoji">
           </div>
           <div class='project-info-slider'>
+            <h2>WEB</h2>
+            <h3>STOCKMOJI</h3>
             <div class='project-info'>
-              <a href=''>
+              <a href='https://github.com/Piglacquer/stockmoji-client'>
                 <img src='static/github-logo.png'>
               </a>
-              <a href=''>
+              <a href='https://stockmoji.firebaseapp.com/'>
                 <img src='static/sign-out-option.png'>
               </a>
             </div>
