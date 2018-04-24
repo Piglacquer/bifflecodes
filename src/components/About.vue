@@ -32,5 +32,6 @@ export default {
   color: white;
   font-size: 2rem;
   width: 60vw;
+  font-family: "Tajawal", sans-serif;
 }
 </style>

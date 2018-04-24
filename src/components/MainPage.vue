@@ -79,7 +79,6 @@ export default {
         return (place / side - 0.5) * radius * 1.2;
       }
 
-      //Plant the seeds, grow some trees in a grid!
       for (var p = 0; p < pitchSegments; p++) {
         var pitch = Math.PI * 2 * p / pitchSegments;
         for (var e = 0; e < elevationSegments; e++) {
@@ -103,13 +102,13 @@ export default {
             Math.floor(parentContainer.children.length / Math.pow(side, 2)) %
               side
           );
-          console.log(
-            side,
-            parentContainer.children.length,
-            particle.position.x,
-            particle.position.y,
-            particle.position.z
-          );
+          // console.log(
+          //   side,
+          //   parentContainer.children.length,
+          //   particle.position.x,
+          //   particle.position.y,
+          //   particle.position.z
+          // );
           particle.userData = {
             dests: [dest, particle.position.clone()],
             speed: new THREE.Vector3()

@@ -135,6 +135,8 @@
             <img class='project-pic' src="../../static/UNSG-intro_2.png" alt="unsg">
           </div>
         <div class='project-info-slider'>
+          <h2>MOTION</h2>
+          <h3>UNSUNG INTRO ONE</h3>
           <div class='project-info'>
             <a href='https://vimeo.com/263949983'>
               <img src='static/vimeo.png'>
@@ -147,6 +149,8 @@
           <img class='project-pic' src="/static/Cult-Sundays-Motion.png" alt="unsg">
         </div>
       <div class='project-info-slider'>
+        <h2>MOTION</h2>
+        <h3>CULT SUNDAYS INTRO</h3>
         <div class='project-info'>
           <a href='https://vimeo.com/263949470'>
             <img src='static/vimeo.png'>
@@ -159,6 +163,8 @@
           <img class='project-pic' src="/static/Johannes_Bayer-Intro.png" alt="Johannes">
         </div>
       <div class='project-info-slider'>
+        <h2>MOTION</h2>
+        <h3>TEXALONA TWO ANIMATION</h3>
         <div class='project-info'>
           <a href='https://vimeo.com/263951661'>
             <img src='static/vimeo.png'>
@@ -171,6 +177,8 @@
           <img class='project-pic' src="/static/UNSG-intro.png" alt="UNSG">
         </div>
       <div class='project-info-slider'>
+        <h2>MOTION</h2>
+        <h3>UNSUNG INTRO TWO</h3>
         <div class='project-info'>
           <a href='https://vimeo.com/263950081'>
             <img src='static/vimeo.png'>
@@ -236,17 +244,17 @@ h1 {
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  opacity: 0.96;
+  opacity: 0;
   height: 300px;
-  width: 0px;
-  -webkit-transition: width 0.5s; /* Safari */
-  transition: width 0.5s;
+  width: 300px;
+  -webkit-transition: opacity 0.5s; /* Safari */
+  transition: opacity 0.5s;
   background-color: #13ccb7;
   overflow: hidden;
 }
 
 .project:hover .project-info-slider {
-  width: 300px;
+  opacity: 0.98;
 }
 
 .project-pic {
