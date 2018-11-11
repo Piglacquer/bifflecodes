@@ -14,6 +14,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import DesktopMenuBar from "@/components/DesktopMenuBar";
 import MobileMenuBar from "@/components/MobileMenuBar";
@@ -33,6 +34,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 #sphereContainer {
   position: absolute;

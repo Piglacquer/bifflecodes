@@ -4,15 +4,13 @@
     <img src="" alt="">
   </div>
 </template>
+
 <script>
 export default {
   name: "ProjectContainer",
-  data(){
-    return {
+}
+</script>
 
-    }
-  }
-}</script>
 <style scoped>
 .project-container{
   display: flex;

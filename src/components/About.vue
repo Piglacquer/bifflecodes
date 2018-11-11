@@ -1,33 +1,28 @@
 <template>
   <div class='about-container'>
-    <Lottie :options='options' :height='height' :width='width' v-on:animCreated="handleAnimation"/>
-    <div>
+    <div class='face-h1'>
+      <faceAnim />
       <h1 class='about-intro'>Well, hello!</h1>
-      <p class='about'>The name's Patrick. Glad you made it by my personal site. 
-      I'm a full-stack web developer with a passion for problem solving. 
-      Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
-      an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
-      Make yourself at home, take a look around, 
-      and if you need anything, don't hesitate to drop me a line on the 
-      <router-link to='/main/contact' class='white-link'>contact page</router-link>.
-      </p>
     </div>
+    <p class='about'>The name's Patrick. Glad you made it by my personal site. 
+    I'm a full-stack web developer with a passion for problem solving. 
+    Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
+    an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
+    Make yourself at home, take a look around, 
+    and if you need anything, don't hesitate to drop me a line on the 
+    <router-link to='/main/contact' class='white-link'>contact page</router-link>.
+    </p>
   </div>
 </template>
+
 <script>
-import Lottie from '../lottie.vue'
-import * as animationData from '../../static/face.json'
+import faceAnim from '@/components/FaceAnim'
 
 export default {
   name: "About",
-  components: {'Lottie':Lottie},
+  components: {'faceAnim': faceAnim},
   data() {
     return {
-      options: {animationData: animationData},
-      animationSpeed: 1,
-      height: 400,
-      width: 400,
-      scrolled: false
     }
   },
   methods: {
@@ -53,19 +48,27 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 .about-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 80vh;
+  /* width: 80vw; */
 }
+
+.face-h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 60vw;
+  align-content: flex-start;
+}
+
 .about-intro {
   color: white;
   font-family: DejaVu;
-  padding-left: -75px;
-  margin-top: 100px;
   font-size: 3rem;
 }
 

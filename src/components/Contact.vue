@@ -32,6 +32,7 @@
     </mq-layout>
   </div>
 </template>
+
 <script>
 
 export default {
@@ -73,14 +74,15 @@ export default {
       this.responseShown = true
     }
   }
-}</script>
-<style scoped>
+}
+</script>
 
-h3{
+<style scoped>
+h3 {
   margin: 0;
 }
 
-.email-response{
+.email-response {
   padding: 10px;
   border-radius: 15px;
   border-style: none;

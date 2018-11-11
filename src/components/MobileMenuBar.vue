@@ -13,6 +13,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import Lottie from '../lottie.vue'
 import * as animationData from '../../static/PB.json'
@@ -54,7 +55,9 @@ export default {
         this.anim.setSpeed(this.animationSpeed);
       }
     }
-}</script>
+}
+</script>
+
 <style scoped>
 .menu-bar{
   display: flex;

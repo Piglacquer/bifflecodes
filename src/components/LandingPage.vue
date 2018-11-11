@@ -3,7 +3,7 @@
     <mq-layout mq="mobile">
       <router-link to='main'>
         <div class="">
-          <lottie :options="defaultOptions" :height="200" :width="200" v-on:animCreated="handleAnimation"/>
+          <lottie :options="defaultOptions" :height="200" :width="200" v-on:animCreated="handleAnimation"/>  
         </div>
       </router-link>
     </mq-layout>
@@ -16,6 +16,7 @@
     </mq-layout>
   </div>
 </template>
+
 <script>
 import Lottie from '../lottie.vue'
 import * as animationData from '../../static/PB.json';
@@ -23,7 +24,7 @@ import * as animationData from '../../static/PB.json';
 export default {
   name: "LandingPage",
   components: {
-    'lottie': Lottie
+    'lottie': Lottie,
   },
   data(){
     return {
@@ -54,7 +55,8 @@ export default {
         this.anim.setSpeed(this.animationSpeed);
       }
     }
-}</script>
+}
+</script>
 
 <style scoped>
 @font-face {

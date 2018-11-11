@@ -191,8 +191,8 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
+
 <script>
 export default {
   name: "Projects",
@@ -201,6 +201,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 #projects {
   display: flex;
