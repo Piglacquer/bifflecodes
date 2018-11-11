@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
-    <h1>PROJECTS</h1>
-    <h2>WEB</h2>
+    <h1 class='page-title'>PROJECTS</h1>
+    <h2 class='heading'>WEB</h2>
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <h2>FILM</h2>
+      <h2 class='heading'>FILM</h2>
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <h2>MOTION</h2>
+      <h2 class='heading'>MOTION</h2>
       <div class="projects-container">
         <div class="project">
           <div class='project-pic'>
@@ -208,6 +208,7 @@ export default {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  margin: 2vh;
 }
 h1 {
   color: white;
@@ -215,6 +216,11 @@ h1 {
   padding-left: 20px;
   margin: 0;
   font-size: 3rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 4vh;
 }
 
 .projects-container {
@@ -271,6 +277,10 @@ img {
   position: abolute;
   width: 50px;
   height: 50px;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 h2,

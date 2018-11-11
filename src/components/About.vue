@@ -1,10 +1,12 @@
 <template>
   <div class='about-container'>
     <div class='face-h1'>
-      <faceAnim />
-      <h1 class='about-intro'>Well, hello!</h1>
+      <faceAnim class='face'/>
+      <div class='h1-container'>
+        <h1 class='about-intro'>Well, hello!</h1>
+      </div>
     </div>
-    <p class='about'>The name's Patrick. Glad you made it by my personal site. 
+    <p class='about'>The name's Patrick, Patrick Biffle. Glad you made it by my personal site. 
     I'm a full-stack web developer with a passion for problem solving. 
     Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
     an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
@@ -56,14 +58,23 @@ export default {
   align-items: center;
   justify-content: center;
   height: 80vh;
-  /* width: 80vw; */
+  overflow: hidden;
+  width: 100vw;
 }
 
 .face-h1 {
   display: flex;
   flex-flow: row nowrap;
   width: 60vw;
-  align-content: flex-start;
+  justify-content: baseline;
+  margin: 3vh;
+}
+
+.h1-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
 .about-intro {

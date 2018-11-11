@@ -1,5 +1,5 @@
 <template>
-    <Lottie :options='defaultOptions' :height='400' :width='400' v-on:animCreated="handleAnimation"/>
+    <Lottie :options='defaultOptions' :height='300' :width='200' v-on:animCreated="handleAnimation"/>
 </template>
 
 <script>
