@@ -30,8 +30,8 @@
       this.anim = bodymovin.loadAnimation({
           container: this.$refs.lavContainer,
           renderer: 'svg',
-          loop: this.options.loop = false,
-          autoplay: this.options.autoplay = true,
+          loop: this.options.loop || false,
+          autoplay: this.options.autoplay || true,
           animationData: this.options.animationData,
           rendererSettings: this.options.rendererSettings
         }
