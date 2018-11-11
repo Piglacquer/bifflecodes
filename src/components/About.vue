@@ -1,7 +1,14 @@
 <template>
   <div class='about-container'>
-    <h1 class='about-intro'>GOOD DAY!</h1>
-    <p class='about'>My name is Patrick Biffle, and I'm a full stack web developer with a passion for code, motors, and Mexican food. I spend most of my time on the front-end, using Vue and React. I also have a background in digital media creation. Check out some of my projects to see some of the work I've done. If you like it, and would like someone to help you get to where you want to be on the web, swing by the contact page and drop me a line!</p>
+    <h1 class='about-intro'>Well, hello!</h1>
+    <p class='about'>The name's Patrick. Glad you made it by my personal site. 
+      I'm a full-stack web developer with a passion for problem solving. 
+      Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
+      an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
+      Make yourself at home, take a look around, 
+      and if you need anything, don't hesitate to drop me a line on the 
+      <router-link to='/main/contact' class='white-link'>contact page</router-link>.
+    </p>
   </div>
 </template>
 <script>
@@ -24,7 +31,7 @@ export default {
   color: white;
   font-family: DejaVu;
   padding-left: -75px;
-  margin: 0;
+  margin-top: 100px;
   font-size: 3rem;
 }
 
@@ -33,5 +40,9 @@ export default {
   font-size: 2rem;
   width: 60vw;
   font-family: "Tajawal", sans-serif;
+}
+
+.white-link {
+  color: white;
 }
 </style>

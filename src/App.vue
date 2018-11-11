@@ -16,7 +16,8 @@ export default {
       this.fade = toDepth < fromDepth ? 'slide-right' : 'slide-left'
   }
 }
-}</script>
+}
+</script>
 
 <style>
 
