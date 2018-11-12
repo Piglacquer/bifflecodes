@@ -1,7 +1,7 @@
 <template>
   <div class='contact'>
     <mq-layout mq="mobile">
-      <h1>IM CONTACT</h1>
+      <h1>CONTACT</h1>
       <form class="mobile-form-contact" v-on:submit.prevent='sendEmail(client)' method="post">
         <label for="name">NAME</label>
         <input v-model='client.name' type="text" name="name" placeholder='Your Name'>
@@ -16,19 +16,21 @@
       </form>
     </mq-layout>
     <mq-layout mq="laptop+">
-      <h1>IM CONTACT</h1>
-      <form class="laptop-form-contact" v-on:submit.prevent='sendEmail(client)' method="post">
-        <label for="name">NAME</label>
-        <input  v-model='client.name' type="text" name="name" placeholder='Your Name'>
-        <label for="email">E-MAIL</label>
-        <input  v-model='client.email' type="text" name="email" placeholder='Your E-mail'>
-        <label for="reason">WHAT CAN I HELP YOU WITH?</label>
-        <input  v-model='client.message' class='laptop-form-reason' type="text" name="reason" placeholder='I really need some help with these bees'>
-        <div class="submit-response">
-          <input class='laptop-form-submit' type="submit" name="submit" value="SUBMIT">
-          <h3 v-if='responseShown' class='email-response'>{{response}}</h3>
-        </div>
-      </form>
+      <div class='contact'>
+        <h1 class='page-title'>CONTACT</h1>
+        <form class="laptop-form-contact" v-on:submit.prevent='sendEmail(client)' method="post">
+          <label for="name">NAME</label>
+          <input  v-model='client.name' type="text" name="name" placeholder='Your Name'>
+          <label for="email">E-MAIL</label>
+          <input  v-model='client.email' type="text" name="email" placeholder='Your E-mail'>
+          <label for="reason">WHAT CAN I HELP YOU WITH?</label>
+          <textarea  v-model='client.message' class='laptop-form-reason' type="text" name="reason" placeholder='I really need some help with these bees!!!' />
+          <div class="submit-response">
+            <input v-if='!responseShown' class='laptop-form-submit' type="submit" name="submit" value="SUBMIT">
+            <h3 v-if='responseShown' class='email-response'>{{response}}</h3>
+          </div>
+        </form>
+      </div>
     </mq-layout>
   </div>
 </template>
@@ -66,6 +68,11 @@ export default {
         this.response = resp.message
       })
       .then(() => this.wipeForm())
+      .then(() => {
+        setTimeout(() => {
+          this.responseShown = false
+        },2500)
+      })
     },
     wipeForm(){
       this.client.email = ''
@@ -78,6 +85,13 @@ export default {
 </script>
 
 <style scoped>
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 h3 {
   margin: 0;
 }
@@ -86,7 +100,7 @@ h3 {
   padding: 10px;
   border-radius: 15px;
   border-style: none;
-  background-color: #13CCB7;;
+  background-color: #13CCB7;
   color: white;
   font-size: 2rem;
   font-family: DejaVu;
@@ -95,7 +109,7 @@ h3 {
 .submit-response{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 10vh;
@@ -107,13 +121,6 @@ h3 {
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  color: white;
-  font-family: DejaVu;
-  margin: 0;
-  font-size: 3rem;
 }
 
 label {
@@ -167,7 +174,7 @@ label {
   padding: 1rem;
 }
 
-input[type=text]{
+input[type=text], textarea{
   border-style: solid;
   background-color: black;
   border-width: 0 0 1px 1px;
@@ -175,6 +182,12 @@ input[type=text]{
   color: white;
   padding: 5px 0 5px 8px;
   margin: 10px 0 10px 0;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border:1px solid #13CCB7;
+    box-shadow: 0 0 10px #13CCB7;
 }
 
 .laptop-form-reason{

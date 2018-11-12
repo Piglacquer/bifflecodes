@@ -1,9 +1,10 @@
 <template>
   <div class='about-container'>
+    <h1 class='page-title'>ABOUT</h1>
     <div class='face-h1'>
       <faceAnim class='face'/>
       <div class='h1-container'>
-        <h1 class='about-intro'>Well, hello!</h1>
+        <h1 class='about-intro'>WELL, HELLO!</h1>
       </div>
     </div>
     <p class='about'>The name's Patrick, Patrick Biffle. Glad you made it by my personal site. 
@@ -80,7 +81,7 @@ export default {
 .about-intro {
   color: white;
   font-family: DejaVu;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .about {

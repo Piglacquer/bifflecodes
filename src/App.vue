@@ -82,4 +82,11 @@ body{
 .fade-enter, .fade-leave-active {
   opacity: 0
 }
+
+.page-title {
+  color: white;
+  font-family: DejaVu;
+  margin: 3vh;
+  font-size: 3rem;
+}
 </style>
