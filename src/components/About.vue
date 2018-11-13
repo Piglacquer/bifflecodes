@@ -1,20 +1,19 @@
 <template>
   <div class='about-container'>
     <h1 class='page-title'>ABOUT</h1>
-    <div class='face-h1'>
-      <faceAnim class='face'/>
-      <div class='h1-container'>
+    <div class='about-body'>
+      <div class='about-body-container'>
         <h1 class='about-intro'>WELL, HELLO!</h1>
+        <p class='about'><faceAnim class='face'/>The name's Patrick, Patrick Biffle. Glad you made it by my personal site. 
+        I'm a full-stack web developer with a passion for problem solving. 
+        Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
+        an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
+        Make yourself at home, take a look around, 
+        and if you need anything, don't hesitate to drop me a line on the 
+        <router-link to='/main/contact' class='white-link'>contact page</router-link>.
+        </p>
       </div>
     </div>
-    <p class='about'>The name's Patrick, Patrick Biffle. Glad you made it by my personal site. 
-    I'm a full-stack web developer with a passion for problem solving. 
-    Nothing gets me going quite like the thought of coming up with a creative, awesome solution, whether it be for a web app, 
-    an animation, or a motor vehicle that just isn't behaving right (though I prefer the web app solutions). 
-    Make yourself at home, take a look around, 
-    and if you need anything, don't hesitate to drop me a line on the 
-    <router-link to='/main/contact' class='white-link'>contact page</router-link>.
-    </p>
   </div>
 </template>
 
@@ -57,25 +56,22 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 80vh;
   overflow: hidden;
   width: 100vw;
 }
 
-.face-h1 {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 60vw;
-  justify-content: baseline;
-  margin: 3vh;
-}
-
-.h1-container {
+.about-body {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+
+.face {
+  float: left;
 }
 
 .about-intro {
@@ -87,7 +83,7 @@ export default {
 .about {
   color: white;
   font-size: 2rem;
-  width: 60vw;
+  width: 40vw;
   font-family: "Tajawal", sans-serif;
 }
 

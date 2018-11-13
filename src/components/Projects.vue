@@ -167,7 +167,7 @@
         </div>
       <div class='project-info-slider'>
         <h2>MOTION</h2>
-        <h3>TEXALONA TWO ANIMATION</h3>
+        <h3>TEXALONA ANIMATION</h3>
         <div class='project-info'>
           <a href='https://vimeo.com/263951661'>
             <img src='static/vimeo.png'>
@@ -250,7 +250,7 @@ h1 {
 
 .project-info-slider {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
   position: absolute;
@@ -280,7 +280,7 @@ img {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h2,
