@@ -39,23 +39,6 @@
         </div>
         <div class="project">
           <div class='project-pic'>
-            <img class='project-pic' src="static/oysterWithCaviar.png" alt="oysterWithCaviar">
-          </div>
-          <div class='project-info-slider'>
-            <h2>WEB</h2>
-            <h3>CAVIAR DREAMS</h3>
-            <div class='project-info'>
-              <a target='_blank' href='https://github.com/Piglacquer/towerClient'>
-                <img src='static/github-logo.png'>
-              </a>
-              <a target='_blank' href='https://caviar-dreams-8c551.firebaseapp.com/#/'>
-                <img src='static/sign-out-option.png'>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class='project-pic'>
             <img class='project-pic' src="static/stockmoji.png" alt="stockmoji">
           </div>
           <div class='project-info-slider'>
@@ -66,6 +49,23 @@
                 <img src='static/github-logo.png'>
               </a>
               <a href='https://stockmoji.firebaseapp.com/'>
+                <img src='static/sign-out-option.png'>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class='project-pic'>
+            <img class='project-pic' src="static/stockmoji.png" alt="stockmojir">
+          </div>
+          <div class='project-info-slider'>
+            <h2>WEB</h2>
+            <h3>STOCKMOJI V2</h3>
+            <div class='project-info'>
+              <a target='_blank' href='https://github.com/Piglacquer/stockmoji-client-v2'>
+                <img src='static/github-logo.png'>
+              </a>
+              <a target='_blank' href='https://stockmoji-v2.firebaseapp.com/'>
                 <img src='static/sign-out-option.png'>
               </a>
             </div>
